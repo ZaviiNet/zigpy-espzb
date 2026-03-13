@@ -49,7 +49,7 @@ class Status(t.enum8):
     BUSY = 7
 
 
-class FirmwareVersion(t.Struct, t.uint32_t):
+class FirmwareVersion(t.uint32_t, t.IntStruct):
     reserved: t.uint8_t
     patch: t.uint8_t
     minor: t.uint8_t
