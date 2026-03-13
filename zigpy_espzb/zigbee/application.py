@@ -63,8 +63,6 @@ class ControllerApplication(zigpy.application.ControllerApplication):
         super().__init__(config=config)
         self._api = None
 
-        self._pending = zigpy.util.Requests()
-
         self._delayed_neighbor_scan_task = None
         self._reconnect_task = None
 
